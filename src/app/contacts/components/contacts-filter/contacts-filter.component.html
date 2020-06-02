@@ -1,0 +1,12 @@
+<div>
+	<form formGroup="fg">
+		<div>
+			<select formControlName="select">
+				<option value="option{{i}}" *ngFor="let option of selectOptions; let i = index">Option {{i}}</option>
+			</select>
+		</div>
+		<div>
+			<input type="text" placeholder="Введите ФИО, должность или номер телефона" formControlName="input">
+		</div>
+	</form>
+</div>
